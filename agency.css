@@ -186,3 +186,33 @@ body{
     border-radius: 0;
     margin-top: 33px;
 }
+@media (max-width: 600px) {
+    .navbar {
+      flex-direction: column; /* Stack navigation links vertically */
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 5px 0; /* Add spacing between stacked links */
+    }
+  
+    main {
+      flex-direction: column; /* Stack sections vertically */
+    }
+  
+    section {
+      flex: 1 1 100%; /* Take full width on small screens */
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    section {
+      flex: 1 1 45%; /* Two columns for medium screens */
+    }
+  }
+  
+  @media (min-width: 901px) {
+    section {
+      flex: 1 1 30%; /* Three columns for large screens */
+    }
+  }
